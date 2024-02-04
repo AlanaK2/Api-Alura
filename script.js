@@ -17,4 +17,10 @@ const api = fetch("http://localhost:3000/videos")
         `;
     }
     ))
+   // Código omitido. 
+
+.catch((error) => {
+    containerVideos.innerHTML = `<p> Houve um erro ao carregar os vídeos: ${error} </p>`;
+})
+
 
